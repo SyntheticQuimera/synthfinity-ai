@@ -1,9 +1,13 @@
-import { Button } from "@/components/ui/button";
+import AnimatedBackground from "@/components/AnimatedBackground";
+import LandingHero from "@/components/LandingHero";
+import LandingNavbar from "@/components/LandingNavbar";
 
 export default function LandingPage() {
   return (
-    <main className='flex min-h-screen flex-col items-center justify-between p-24'>
-      <Button variant='secondary'>Landing</Button>
-    </main>
+    <div className="h-full">
+      <LandingNavbar />
+      <LandingHero />
+      <AnimatedBackground />
+    </div>
   );
 }
